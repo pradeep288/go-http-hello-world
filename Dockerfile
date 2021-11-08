@@ -12,6 +12,6 @@ FROM scratch
 WORKDIR /app
 COPY --from=builder /tmp/hello-world /app/hello-world
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD [ "/app/hello-world" ]
